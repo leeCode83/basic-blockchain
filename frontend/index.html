@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Certificate Registry</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="index.html" class="nav-brand">Certificate Registry</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="http://localhost:3001/block-explorer" target="_blank">Block Explorer</a>
+            </div>
+        </nav>
+
+        <header>
+            <h1>Certificate Registry</h1>
+            <p>Securely store and verify certificates on the blockchain</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>Register New Certificate</h2>
+                <form id="certificateForm">
+                    <div class="form-group">
+                        <label for="issuer">Issuer Name</label>
+                        <input type="text" id="issuer" placeholder="e.g. University of Blockchain" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="recipient">Recipient Name</label>
+                        <input type="text" id="recipient" placeholder="e.g. John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fileInput">Certificate File (PDF)</label>
+                        <div class="file-upload-wrapper">
+                            <input type="file" id="fileInput" accept="application/pdf" required>
+                            <span class="file-custom">Choose file...</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="certificateHash">Certificate Hash (SHA-256)</label>
+                        <input type="text" id="certificateHash" readonly
+                            placeholder="Upload a file to generate hash...">
+                        <small>Calculated automatically from the file content</small>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit" id="submitBtn">Register on Blockchain</button>
+                        <button type="button" id="mineBtn" class="secondary-btn">Mine Block (Confirm
+                            Transactions)</button>
+                    </div>
+                    <div id="statusMessage"></div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
