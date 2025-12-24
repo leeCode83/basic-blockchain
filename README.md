@@ -1,9 +1,10 @@
-# Project Blockchain Sederhana (Basic Blockchain Programming)
+# Sistem Pencatatan Sertifikat Berbasis Blockchain
 
-Project ini adalah implementasi sederhana dari teknologi Blockchain menggunakan JavaScript (Node.js). Project ini dirancang untuk mendemonstrasikan cara kerja dasar blockchain, termasuk pembuatan blok, validasi transaksi, algoritma konsensus (Proof of Work), dan desentralisasi jaringan antar node.
+Project ini merupakan sebuah **sistem pencatatan sertifikat berbasis blockchain**. Dimana pengguna dapat menyimpan **hash dari dokumen digital sertifikat** tersebut ke dalam blockchain untuk menjamin keaslian dan keamanan data.
 
-Secara spesifik, project ini dikembangkan untuk kasus penggunaan **Validasi Sertifikat**, di mana issuer dapat mendaftarkan hash dari sertifikat ke dalam blockchain agar tidak dapat dipalsukan.
+Sistem ini dikembangkan sebagai implementasi teknologi Blockchain menggunakan JavaScript (Node.js). Project ini dirancang untuk mendemonstrasikan cara kerja dasar blockchain, termasuk pembuatan blok, validasi transaksi, algoritma konsensus (Proof of Work), dan desentralisasi jaringan antar node.
 
+Secara spesifik, aplikasi ini memungkinkan pencatatan yang transparan dan tidak dapat diubah (immutable), sehingga cocok untuk kebutuhan validasi dokumen digital.
 ## Daftar Isi
 - [Fitur Project](#fitur-project)
 - [Teknologi yang Digunakan](#teknologi-yang-digunakan)
